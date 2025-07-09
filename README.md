@@ -78,11 +78,9 @@ Reload privilege tables? Y
 ```
 ## Step 5: Configure MariaDB Charset for UTF8MB4
 #### Edit the MariaDB config file:
-
-bash
-Copy
-Edit
+```bash
 sudo nano /etc/mysql/my.cnf
+```
 Add these lines:
 ```bash
 [mysqld]
@@ -185,12 +183,10 @@ bench setup nginx
 ```bash
 sudo supervisorctl restart all
 ```
-Notes
-After production setup, ERPNext will be accessible on default HTTP/HTTPS ports without port number.
+>Notes
+>>After production setup, ERPNext will be accessible on default HTTP/HTTPS ports >>without port number.
 
-If prompted to overwrite config files during setup, choose Y.
+>Ensure firewall rules allow HTTP/HTTPS traffic.
 
-Ensure firewall rules allow HTTP/HTTPS traffic.
-
-Use systemctl or supervisorctl to manage ERPNext services in production.
+>Use systemctl or supervisorctl to manage ERPNext services in production.
 
