@@ -1,9 +1,4 @@
-Markdown content:
-
-md
-Copy
-Edit
-# ERPNext v15 Installation and Production Setup on Ubuntu 22.04
+# ERPNext  Installation and Production Setup on Ubuntu 22.04
 
 ## Prerequisites
 
