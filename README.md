@@ -17,13 +17,13 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 ```
 ## Step 2: Create a New User for Bench
-Replace [frappe-user] with your desired username (e.g., frappe):
+Replace [guba] with your desired username (e.g., admin):
 
 ```bash
-sudo adduser [frappe-user]
-sudo usermod -aG sudo [frappe-user]
-su - [frappe-user]
-cd /home/[frappe-user]
+sudo adduser [guba]
+sudo usermod -aG sudo [guba]
+su - [guba]
+cd /home/[guba]
 ```
 ##  Step 3: Install Required Packages
  #### Install Git
@@ -128,10 +128,10 @@ bench init --frappe-branch version-15 frappe-bench
 cd frappe-bench
 ```
 ## Step 9: Set Permissions for Home Directory
-Replace [frappe-user]:
+Replace [guba]:
 
 ```bash
-chmod -R o+rx /home/[frappe-user]
+chmod -R o+rx /home/[guba]
 ```
 ## Step 10: Create a New Site
 ```bash
@@ -173,7 +173,7 @@ bench --site [site-name] set-maintenance-mode off
 ```
 #### Setup Production
 ```bash
-sudo bench setup production [frappe-user]
+sudo bench setup production [guba]
 ```
 #### Setup NGINX
 ```bash
